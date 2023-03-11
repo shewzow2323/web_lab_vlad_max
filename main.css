@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color:aquamarine; 
+    background-color:rgba(13, 155, 108, 0.541); 
     color:black; 
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: -10px; 
@@ -30,14 +30,35 @@ footer {background-color: aquamarine;
 
 a:visited {
     color:brown
+    
 }
 
 a:hover {
-    color:red;
+    color:rgb(38, 194, 17);
     text-decoration: underline;
     background-color: white;
     font-weight: bold;
+    text-shadow: 2px 2px 4px black;
+    transition: 2s ease-in-out;
+ 
+    
+a:hover hr {
+    transition: width 0.5s
 }
+}
+
+header:hover {
+    color:rgb(245, 33, 5);
+    text-shadow: 2px 2px 4px rgb(153, 8, 8);
+    transition: 0.2ms, 0.5s;
+    font-size: large;
+}
+
+footer:hover {
+    color:rgb(245, 33, 5);
+    text-shadow: 2px 2px 4px rgb(148, 29, 29);
+    transition: 0.2ms, 0.5s;
+    font-size: large;}
 
 a:active {
     color:pink;
