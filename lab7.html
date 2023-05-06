@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Гавра Владислав Артемович, Кривошеев Максим Сергеевич Лабораторная работа №5</title>
+    <link rel="stylesheet" href="main.css">
+    <script>
+        function AddBlocks() {
+            for (let i=0; i<10; i++) {
+                let block = document.createElement("div");
+                block.innerHTML="Блок 1"+(i+1)+': ' + (2*i**2);
+
+                let blocks = document.getElementById("blocks");
+                blocks.appendChild(block);
+
+
+            
+            }
+        
+        }
+        
+    </script>
+    
+    <style>
+        
+        
+    </style> 
+</head>
+
+<body>
+    <header onclick="showAuthor()">
+        НГТУ, 2 курс, 5 лабораторная, Гавра Владислав Артемович, Кривошеев Максим Сергеевич
+    </header>
+
+<main>
+  <button onclick="AddBlocks()">Cоздать блоки</button>
+  <div id="blocks"></div>
+
+  <button onclick="showExchange()">Курс доллара</button>
+  <table border="1" id="dollar-exchange"></table>
+
+</main>
+
+
+    <footer>
+        &copy; Гавра Владислав Артемович, Кривошеев Максим Сергеевич, ФБИ-11
+    </footer>
+</body>
+</html>

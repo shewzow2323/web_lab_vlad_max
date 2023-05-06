@@ -58,7 +58,10 @@ footer:hover {
     color:rgb(245, 33, 5);
     text-shadow: 2px 2px 4px rgb(148, 29, 29);
     transition: 0.2ms, 0.5s;
-    font-size: large;}
+    font-size: large;
+    margin-top: 100%;
+    margin-bottom: 0px;
+}
 
 a:active {
     color:pink;
